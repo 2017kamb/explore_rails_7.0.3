@@ -9,8 +9,8 @@ gem "rails", "~> 7.0.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# Use pg as the database for Active Record
+# gem "pg", "~> 1.4" # no need of this for now due to pg gem use
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -73,3 +73,5 @@ end
 
 # for environment variables
 gem 'figaro', '~> 1.2'
+# postgresql db for heroku deployment
+gem "pg", "~> 1.1"
